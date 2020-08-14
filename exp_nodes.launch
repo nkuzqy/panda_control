@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <node pkg="panda_control" type="observations_server.py" name="observations" launch-prefix="xterm -e" />
+    <node pkg="panda_control" type="image_server.py" name="images" launch-prefix="xterm -e"/>
+    <node pkg="panda_control" type="fk_server.py" name="fk_server" launch-prefix="xterm -e"/>
+    <node pkg="panda_control" type="ik_server.py" name="ik_server" launch-prefix="xterm -e"/>
+</launch>
